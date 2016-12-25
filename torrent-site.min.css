@@ -2367,7 +2367,7 @@ h2 .icon16 span,
 ------------------------------------------------------- */
 @font-face {
     font-family: "katfont";
-    src: url(https://katcr.co/new/arbcdn/katfont-Regular-v2.woff) format('woff'), url(https://katcr.co/new/arbcdn/katfont-Regular-v2.svg) format('svg')
+    src: url(https://prxio.github.io/katfont-Regular-v2.woff) format('woff'), url(https://prxio.github.io/katfont-Regular-v2.svg) format('svg')
 }
 .sliderbox ul li #aclrow a {
     padding: 4px 0 4px 0px
