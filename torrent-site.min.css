@@ -1,0 +1,3024 @@
+/* -- Theme Resets --*/
+.nfo {
+    font-family: terminal;
+    font-size: 10px;
+}
+hr {
+    height: 1px;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px dotted #ccc;
+}
+p {
+    margin: 0px;
+    padding: 0px;
+}
+ul, ol {
+    list-style-position: inside;
+    list-style-type: none;
+}
+a, img {
+    border: 0px none;
+    outline: none;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #99742e;
+    font-weight: normal;
+    padding: 0;
+    margin-top: 0;
+    margin: 0 0 5px 0;
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a {
+    color: #99742e;
+    text-decoration: none
+}
+
+h1 a:hover,h1 a:hover span,h2 a:hover,h2 a:hover span,h3 a:hover,h3 a:hover span,h4 a:hover,h4 a:hover span,h5 a:hover,h5 a:hover span {
+    color: #5f4e18
+}
+
+h1 .icon16,h2 .icon16,h3 .icon16,h4 .icon16,h5 .icon16 {
+    vertical-align: bottom;
+    top: -4px;
+    position: relative
+}
+
+h1 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 26px;
+    margin: 0 0 10px 0
+}
+
+h2 {
+    font-size: 21px;
+    clear: left
+}
+
+h3 {
+    font-size: 16px;
+    clear: both;
+    color: #786142
+}
+
+h3 span {
+    color: #727272
+}
+
+h4 {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0 0 2px 0
+}
+
+h5 {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    color: #999;
+    margin: 0
+}
+
+h6 {
+    clear: none;
+    margin: -2px 0 10px 0
+}
+
+table {border-collapse: collapse;}
+
+/* Layout Styles */
+body {
+    background-color: #FFF;
+    font: 78%/130% "Verdana", "Arial", "Helvetica", sans-serif;
+    margin: 0 auto;
+}
+.wrapper {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    position: relative;
+    margin-top: 48px;   
+}
+.header {
+    position: fixed;
+    z-index: 500;
+    width: 100%;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+    height: 48px;
+    background: #594c2d;
+    top: 0;
+}
+.headerbanner {
+    max-height: 100%;  
+    max-width: 100%; 
+    width: auto;
+    height: auto;
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+    vertical-align: middle;
+    text-align: center;
+}
+.logo {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
+.logo img {
+    height: 41px;
+    padding: 3.5px 4px;
+    width: auto;
+}
+
+.header a#logo {
+    margin: 5px 5px;
+    float: left;
+    width: 220px;
+    height: 40px;
+    background: url("https://katcommunity-631f.kxcdn.com/cgi/static/images/kat_logo_1x.png") no-repeat;
+    transition: 0.2s all;
+    display: inline-block
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dppx) {
+    .header a#logo {
+        background:url("https://katcommunity-631f.kxcdn.com/cgi/static/images/kat_logo_2x.png") no-repeat left !important;
+        background-size: cover !important
+    }
+}
+
+.infobar {
+    color: #ffeeb4;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    z-index: 2;
+    position: absolute;
+    vertical-align: middle;
+}
+.infobar a, .infobar a:visited {
+    color: #ffeeb4;
+}
+.infobar a:hover, .infobar a:visited:hover {
+    color: #ffeeb4;
+    text-decoration: underline;
+}
+
+/* Search field */
+.header #search_form {
+    margin: 0;
+    padding: 9px;
+    width: 21vw;
+}
+.header #search_form input[name=search] {
+    position: relative;
+    line-height: 20px;
+    z-index: 1;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 14px;
+    padding: 5px 70px 5px 8px;
+    color: #7c6a59;
+    margin: 0 !important;
+    border: none;
+    box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: none !important;
+    border-radius: 2px;
+}
+.header #search_form input[name=submit] {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    z-index: 3;
+}
+
+
+#searchTool {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    z-index: 3;
+    height: 30px;
+}
+
+#searchTool button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    height: 30px;
+}
+
+#searchTool .ka:before {
+    font-size: 17px !important;
+    margin: 2px;
+    color: #5f5f5e;
+    text-shadow: none;
+    cursor: pointer;
+    line-height: 26px;
+    height: 30px
+}
+
+#searchTool .ka:before:hover {
+    color: #2a2a2a;
+    cursor: pointer !important
+}
+
+
+#main {
+    padding: 13px 28px 20px;
+    display: block;
+    position: relative;
+    margin: 0px;
+}
+.credits {
+    text-align: center;
+    display: block;
+    margin: 0px;
+    padding: 10px;
+    width: auto;
+    line-height: 16px;
+}
+
+
+/* -- Form Styles -- */
+select, textarea, input[type=text] {
+    border: 1px solid #999;
+    color: #666;
+    font-size: 13px;
+    outline: none;
+    width: 180px;
+    padding: 2px 5px 3px 5px;
+    border-radius: 3px;
+    background: #fff
+}
+select {
+    /*width: 265px;*/
+    padding: 2px 5px 2px 5px;
+}
+input[type=reset], input[type=button], input[type=reset], input[type=submit] {
+    background-color: #c1ad6a;
+    background: #c1ad6a;
+    background: -moz-linear-gradient(top, #c1ad6a 0%, #a28e4b 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c1ad6a), color-stop(100%, #a28e4b));
+    background: -webkit-linear-gradient(top, #c1ad6a 0%, #a28e4b 100%);
+    background: linear-gradient(to bottom, #c1ad6a 0%, #a28e4b 100%);
+    background: -ms-linear-gradient(top, #c1ad6a 0%, #a28e4b 100%);
+    -moz-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08), inset 0 -1px 0 0 rgba(0, 0, 0, 0.03), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+    -webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08), inset 0 -1px 0 0 rgba(0, 0, 0, 0.03), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08), inset 0 -1px 0 0 rgba(0, 0, 0, 0.03), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    border-radius: 2px;
+    margin: 0;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none !important;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -moz-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08), inset 0 -1px 0 0 rgba(0, 0, 0, 0.03), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+    -webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08), inset 0 -1px 0 0 rgba(0, 0, 0, 0.03), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08), inset 0 -1px 0 0 rgba(0, 0, 0, 0.03), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+
+    font-size: 11px;
+    text-shadow: 0 1px 0 #8c751e;
+    font-family: Verdana, Geneva, sans-serif;
+    text-align: center;
+    text-decoration: none !important;
+    font-weight: normal !important;
+    vertical-align: middle;
+    white-space: nowrap;
+    line-height: inherit;
+
+    /*padding: 5px 13px 4px;*/
+    /*letter-spacing: 1px;*/
+    /*font-size: 12px;*/
+    /*text-transform: uppercase;*/
+
+    padding: 2px 8px;
+}
+input[type=reset]:hover, input[type=button]:hover, input[type=reset]:hover, input[type=submit]:hover {
+    color: #fff;
+    background: #a8965a;
+    background: -moz-linear-gradient(top, #a8965a 0%, #89783f 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a8965a), color-stop(100%, #89783f));
+    background: -webkit-linear-gradient(top, #a8965a 0%, #89783f 100%);
+    background: linear-gradient(to bottom, #a8965a 0%, #89783f 100%);
+    background: -ms-linear-gradient(top, #a8965a 0%, #89783f 100%)
+}
+input[type=reset], input[type=button], input[type=reset] {
+}
+input[type=reset]:hover, input[type=button]:hover, input[type=reset]:hover {
+}
+input[type=submit] {
+}
+input[type=submit]:hover {
+}
+input[type=text], 
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* -- Link Styles -- */
+a, a:visited, a:active {
+    color: #7a6933;
+    text-decoration: none;
+}
+a:hover {
+    color: #5f4e18;
+    text-decoration: underline;
+}
+.navigation {
+    text-align: center;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    position: fixed;
+    top: 0;
+    z-index: 510;
+    right: 0px;
+}
+.menu {
+    display: table;
+    padding: 0px;
+    height: 27px;
+    clear: both;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    width: auto;
+}
+.menu ul {
+    display: table-row;
+    margin: 0px;
+    padding: 0px;
+}
+.menu li ul {
+    display: none;
+    z-index: 90;
+    display: none;
+    position: absolute;
+    background: #594c2d;
+    padding: 5px 5px 0 5px;
+    border-radius: 0 0 3px 3px;
+}
+.menu li:hover ul {
+    display: block;
+}
+.menu li a[href="account.php"] { /* Disable text-transform for username */
+    text-transform: none ;
+}
+.menu li:last-child ul { /* fix sub-menu's alignment */
+    right: 0;
+}
+.menu ul li {
+    display: table-cell;
+    margin: 0px;
+    padding: 0px;
+}
+.menu ul li a {
+    color: #ffeeb4;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.6);
+    font-size: 11px;
+    font-weight: 600;
+    padding: 0 13px;
+    height: 48px;
+    line-height: 48px;
+    display: block;
+    transition: 0.1s all;
+    text-decoration: none !important;
+    position: relative;
+    transform: translate3d(0, 0, 0);
+    text-transform: uppercase;
+}
+.menu ul > li:hover > a {
+    background: #2c240f;
+}
+.menu ul li a:hover {
+    background: #2c240f;
+}
+.menu li ul li {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+.menu li ul li a {
+    height: 35px;
+    line-height: 35px;
+    border-radius: 3px;
+    padding: 0 8px;
+}
+.menu li ul li a .ka16 {
+    line-height: 10px !important;
+    margin-top: 8px;
+    margin-right: 6px
+}
+}
+.bMenu {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+.bMenu ul {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    list-style-position: inside;
+    list-style-type: circle;
+}
+.bMenu ul li {
+    width: auto;
+    color: #666666;
+    text-decoration: none;
+}
+#navigate ul {
+    list-style-type: none;
+    padding: 0px;
+    width: 98%;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #AAA;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+}
+#navigate ul li {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    border-collapse: collapse;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-top-color: #AAA;
+    border-right-color: #AAA;
+    border-left-color: #AAA;
+}
+#navigate ul li a {
+    text-align: left;
+    text-indent: 5px;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    height: 18px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 18px;
+    font-size: 12px;
+    color: #555;
+    font-weight: bold;
+    background: rgb(238,238,238);
+    background: -moz-linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(221, 221, 221, 1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(238, 238, 238, 1)), color-stop(100%, rgba(221, 221, 221, 1)));
+    background: -webkit-linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(221, 221, 221, 1) 100%);
+    background: -o-linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(221, 221, 221, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(221, 221, 221, 1) 100%);
+    background: linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(221, 221, 221, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#dddddd', GradientType=0 );
+}
+#navigate ul li a:hover {
+    color: #0066CC;
+    text-decoration: none;
+    text-indent: 8px;
+}
+#nMember, #uOnline {
+    margin: 2px;
+    width: 98%;
+    padding: 2px;
+    font-family: Verdana, sans-serif;
+}
+#nMember p, #uOnline p {
+    display: inline;
+}
+#nMember ul, #nMember li, #uOnline ul, #uOnline li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    color: #0066CC;
+}
+
+/* -- Block Styles -- */
+.myBlock {
+    display: block;
+    /* width: 100%; */
+
+    border-left: 1px solid #ccc;
+    margin-left: 1px;
+    margin-right: 0px;
+    padding: 3px 0 11px 15px;
+}
+.myBlock + br { display: none; }
+.myBlock-caption {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    line-height: 25px;
+
+    color: #99742e;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.myBlock-content {
+    display: block;
+}
+.myBlock-foot {
+    margin-top: 5px;
+    border-bottom: 1px solid #DFDDD7;
+}
+
+/* -- Frame Styles  -- */
+.myFrame {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+.myFrame-caption {
+    color: #99742e;
+    font-size: 21px;
+    margin: 0 0 5px 0;
+    clear: left;
+}
+.myFrame-content {
+    display: block;
+    padding: .5rem 0;
+}
+.myFrame-foot {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    height: 0px;
+    width: 100%;
+    display: none;
+}
+
+
+/* DEFINE THE EXPAND CROSS LOCATION IN TORRENTTABLE */
+.showthecross {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 2px;
+    float: left;
+}
+
+
+/* -- Table Styles -- */
+.ttable_headinner {
+    border: none;
+    margin: 7px 0 20px 0;
+    font-size: 11px;
+    border-collapse: collapse;
+    border: none;
+}
+.ttable_headouter {
+    border-collapse: collapse;
+}
+.ttable_head {
+    vertical-align: middle;
+    margin: 0;
+    font-size: 1em;
+    letter-spacing: 0.03em;
+    color: #999;
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-family: "Lucida Grande", Arial, Helvetica, Verdana, sans-serif;
+}
+.ttable_headinner tr th,
+.ttable_headinner tr td {
+    padding: 4px 6px;
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    vertical-align: middle;
+    margin: 0;
+    /* text-align: left */
+}
+.t-row td {
+    white-space: nowrap;
+}
+.t-row .ttable_col1:first-child {
+    width: 100%;
+}
+.ttable_headinner tbody tr:nth-child(odd) {
+    background: #f9f9f9;
+}
+.ttable_headinner tbody tr:hover {
+    background: #f4f1e7;
+}
+.ttable_headinner tr th:first-child {
+    text-align: left;
+    padding: 0;
+}
+.ttable_headinner tr th:last-child,
+.ttable_headinner tr td:last-child {
+    border-right: none;
+}
+.ttable_col1 {
+}
+.ttable_col2 {
+}
+.ttable_colx {
+    font-family: 'Verdana';
+    border:1px solid #777;
+    font-size: 8pt;
+    background-color: #CECECE;
+    /*background-image: url(images/t-row.gif);*/
+    background-repeat: repeat-x;
+    background-position: top;
+} 
+
+
+/* -- Other Table Styles -- */
+.table_table {
+    border: #777;
+    border-style: border-style;
+    border-width: 1px;
+    border-collapse:collapse;
+}
+.table_head {
+    font-family: Verdana;
+    color: #000000;
+    font-size: 8pt;
+    text-align: center;
+    line-height: 20px;
+    /*background-image: url(images/p-title.gif);*/
+    background-repeat: repeat-x;
+    background-position: top;
+    border: 1px solid #777;
+    -moz-box-shadow: inset 0 0 0 1px #fff;
+    -webkit-box-shadow: inset 0 0 0 1px#fff;
+    box-shadow: inset 0 0 0 1px #fff;
+    background-color: #BFDBFF;
+}
+.table_col1 {
+    font-family: 'Verdana';
+    border:1px solid #777;
+    font-size: 8pt;
+    background-color: #E2E2E2;
+}
+.table_col2 {
+    font-family: 'Verdana';
+    border:1px solid #777;
+    font-size: 8pt;
+    background-color: #CCC;
+    /*background-image: url(images/t-row.gif);*/
+    background-repeat: repeat-x;
+    background-position: top;
+} 
+
+
+/* -- Download Styles -- */
+.download {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+/* Prevent oversized images taking up too much space */
+.download img {
+    max-width: 1280px;
+    max-height: 720px;
+}
+.download legend {
+    font-size: 12px;
+    color: #FFF;
+    margin: 0px;
+    padding-top: 3px;
+    padding-right: 13px;
+    padding-bottom: 3px;
+    padding-left: 13px;
+    background: rgb(207,207,207);
+    background: -moz-linear-gradient(top, rgba(207, 207, 207, 1) 0%, rgba(165, 165, 165, 1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(207, 207, 207, 1)), color-stop(100%, rgba(165, 165, 165, 1)));
+    background: -webkit-linear-gradient(top, rgba(207, 207, 207, 1) 0%, rgba(165, 165, 165, 1) 100%);
+    background: -o-linear-gradient(top, rgba(207, 207, 207, 1) 0%, rgba(165, 165, 165, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(207, 207, 207, 1) 0%, rgba(165, 165, 165, 1) 100%);
+    background: linear-gradient(top, rgba(207, 207, 207, 1) 0%, rgba(165, 165, 165, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfcfcf', endColorstr='#a5a5a5', GradientType=0 );
+    -moz-box-shadow: 0px 0px 4px #333;
+    -webkit-box-shadow: 0px 0px 4px #333;
+    box-shadow: 0px 0px 4px #333;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #FFF;
+}
+
+
+/* -- ShoutBox Styles -- */
+.shoutbox_body {
+    font-family: verdana;
+    color: black;
+    float: middle;
+    background-color: White;
+}
+.shoutbox_contain {
+    border: 0;
+    height: 150;
+    width: 100%;
+    overflow: auto;
+    align: middle;
+}
+.shoutbox_history {
+    border: 0;
+    height: 100%;
+    width: 100%;
+    align: middle;
+}
+.shoutbox_messageboxback {
+    background-color: White;
+}
+.shoutbox_noalt {
+    background-color: #E5E5E5;
+}
+.shoutbox_alt {
+    background-color: #EEE;
+}
+.shoutbox_msgbox {
+    width: 100%;
+    font-size: 12px;
+    background-color: #E5E5E5;
+    border: 1px solid #777;
+}
+.shoutbox_shoutbtn {
+    font-size: 12px;
+    background-color: AliceBlue;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+/* -- Error Styles -- */
+.shoutbox_error {
+    color: red;
+    font-size: 13px;
+}
+.error {
+    color: #FF0000;
+}
+
+/* -- Forum Styles -- */
+/* BBCODE CSS CLASS'S */
+small {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9px;
+}
+
+
+/* FORUM CSS CLASS'S */
+
+.f-header {
+    /*background-image: url(images/f-header.gif);*/
+    background-repeat: repeat-x;
+    background-position: top;
+    border: 1px solid #777;
+    background-color: #3d91ff;
+}
+.f-logo {
+    border: 2px solid #FFF;
+    /*background-image: url(images/f-logo.gif);*/
+    background-repeat: no-repeat;
+    background-position: center -1px;
+    -moz-box-shadow: inset 0 0 0 1px #fff;
+    -webkit-box-shadow: inset 0 0 0 1px#fff;
+    box-shadow: inset 0 0 0 1px #fff;
+}
+.f-logo td {
+    padding: 6px;
+    height: 30px;
+}
+.f-location {
+    border: 1px solid #777;
+    margin-bottom: 8px;
+}
+.f-nav {
+    border: 2px solid #FFF;
+    display: block;
+    height: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 28px;
+    text-align: left;
+    text-indent: 10px;
+    /*background-image: url(images/f-location.gif);*/
+    background-repeat: repeat-x;
+    background-position: top;
+    color: #FFFFFF;
+}
+.f-nav a {
+    text-shadow: none;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.f-post {
+    margin-bottom: 8px;
+    background: url(https://katcommunity-631f.kxcdn.com/cgi/static/images/commenheight.png) repeat-y 150px 0;
+}
+.f-cat {
+    /*background-image: url(images/f-cat.gif);*/
+    background-repeat: repeat-x;
+    background-position: top;
+    margin: 0px;
+    padding: 0px;
+    height: 28px;
+}
+.f-cat td,  {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    height: 28px;
+    text-shadow: 0px 1px 2px #000;
+    -moz-box-shadow: inset 0px 0px 0px 1px #fff;
+    -webkit-box-shadow: inset 0px 0px 0px 1px#fff;
+    box-shadow: inset 0px 0px 0px 1px #fff;
+    margin: 0px;
+    padding: 0px;
+}
+div.f-cat {
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-top-color: #777;
+    border-right-color: #777;
+    border-left-color: #777;
+}
+table.f-border, .f-border table {
+    border-collapse: collapse;
+}
+.f-border table tr {
+    border-bottom: 1px dotted #ddd;
+}
+tr.f-title {
+    /*background-image: url(images/f-title.gif);*/
+    background-repeat: repeat-x;
+    background-position: top;
+    background-color: #9dc7ff;
+}
+tr.f-title th {
+    line-height: 26px;
+    height: 26px;
+    padding-right: 3px;
+    padding-left: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-shadow: 0px 1px 1px #000;
+}
+tr.f-row {
+    background-color: #FFF;
+}
+tr.f-row:hover {
+    background-color: #D5D5D5;
+}
+.f-row .f-img {
+    /*background-image: url(images/alt1.png);*/
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    height: 38px;
+    padding-left: 18px;
+}
+.f-row:hover .f-img {
+    /*background-image: url(images/alt2.png)*/
+}
+.alt1 {
+    background-color: transparent;
+    padding-left: 5px;
+}
+.alt2 {
+    border: 1px solid #777;
+    border-collapse: collapse;
+    /*background-image: url(images/alt3.gif);*/
+    background-repeat: repeat-x;
+    background-position: top;
+    background-color: #CDCDCD;
+}
+.alt3 {
+    border: 1px solid #777;
+}
+tr.p-title {
+    background-repeat: repeat-x;
+    background-position: top;
+}
+tr.p-title th {
+    /* color: #FFF; */
+    /* padding: 3px; */
+    /* height: 26px; */
+    /* text-shadow: 0px 1px 1px #000; */
+    /* font-family: Verdana, Arial, Helvetica, sans-serif; */
+    /* text-shadow: 0px 1px 1px #000; */
+    /* font-size: 12px; */
+    font-weight: normal;
+}
+tr.p-title small {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+.p-foot {
+    color: #333;
+    font-size: 10px;
+    font-weight: normal;
+    border-collapse: collapse;
+    /*background-image: url(images/f-location.gif);*/
+    background-repeat: repeat-x;
+    background-position: top;
+}
+.p-foot td {
+    padding: 3px;
+}
+.p-foot img {
+    vertical-align: middle;
+}
+.f-title a, .p-title a {
+    /* text-shadow: 0px 1px 1px #000; */
+    /* color: #FFF; */
+    /* text-decoration: none; */
+}
+.b-border {
+    padding: 1px;
+}
+.b-border table {
+    border-collapse: collapse;
+}
+tr.b-title {
+}
+.bb-comment, .bb-btn, .b-title {
+    border: 1px solid #777;
+}
+.comment-details, .bb-btn {
+    padding: 1em 1em 1em 0;
+}
+.comment, .bb-comment {
+    padding: 1em;
+}
+.comment img { /* downscale big images */
+    max-width: 640px;
+    max-height: 320px;
+}
+
+/* Required fields... */
+.required
+{
+    font-size: 1px;
+    color: #ff0000;
+}
+
+/* / END TT STYLE */
+
+
+
+
+/* Unorganized styles
+------------------------------------------------------- */
+
+.cellMainLink {
+    font-size: 12px;
+    color: #757575;
+    font-weight: bold;
+    text-decoration: none;
+    /* TODO: Fix ellipses */
+    white-space: pre-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 90%;
+    display: block;
+    max-height: 16px;
+}
+
+.cellMainLink:hover {
+    text-decoration: underline
+}
+
+.markeredBlock[class*='Type'] {
+    display: block;
+    width: inherit;
+    height: inherit;
+    float: none
+}
+
+.markeredBlock[class*='Type']:before {
+    content: "";
+    font-family: katfont, monospace !important;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    display: block;
+    float: left;
+    position: relative;
+    margin-left: -22px;
+    line-height: 20px;
+    color: #656565;
+    font-size: 15px !important;
+    cursor: default !important;
+    bottom: 2px
+}
+
+.markeredBlock {
+    padding-left: 22px;
+    padding-top: 2px;
+    max-width: 100%;
+}
+
+.kaGiantButton {
+    box-shadow:0px 0px 0px 1px rgba(0, 0, 0, 0.08) inset, 0px -1px 0px 0px rgba(0, 0, 0, 0.03) inset, 0px 1px 0px 0px rgba(255, 255, 255, 0.2) inset;
+    width:31px;
+    height:29px;
+    padding:0px;
+    display:inline-block;
+    margin-right:0.1em;
+    border-radius:2px;
+    background:transparent linear-gradient(#998750, #8c7a40) repeat scroll 0% 0%;
+    vertical-align:top
+}
+.kaGiantButton .ka:before {
+    color:#fff;
+    font-size:20px;
+    line-height:30px;
+    height:29px;
+    width:23px;
+    text-align:center;
+    margin-top:0px
+}
+.kaGiantButton.iconButton {
+    padding-left:0px !important
+}
+.kaGiantButton.siteButton {
+    width:auto;
+    background:transparent linear-gradient(to bottom, #c1ad6a 0%, #a28e4b 100%) repeat scroll 0% 0%;
+    text-transform:capitalize;
+    padding:0px 10px
+}
+.kaGiantButton.siteButton .ka:before {
+    background-color:#97854E;
+    margin-right:10px;
+    border-radius:2px 0px 0px 2px;
+    box-shadow:0px 0px 0px 1px rgba(0, 0, 0, 0.08) inset, 0px -1px 0px 0px rgba(0, 0, 0, 0.03) inset, 0px 1px 0px 0px rgba(255, 255, 255, 0.2) inset;
+    width:30px;
+    margin-left:0px
+}
+.kaGiantButton.siteButton:hover {
+    background:transparent linear-gradient(to bottom, #a8965a 0%, #89783f 100%) repeat scroll 0% 0%
+}
+.kaGiantButton.siteButton:hover .ka:before {
+    background:transparent linear-gradient(#857540, #7e6b2e) repeat scroll 0% 0%
+}
+.kaGiantButton span {
+    vertical-align:top;
+    line-height:30px;
+    text-transform:uppercase
+}
+.kaGiantButton:hover {
+    background:transparent linear-gradient(#857540, #7e6b2e) repeat scroll 0% 0%
+}
+.kaGiantButton.checkedButton {
+    opacity:0.7
+}
+.downloadButtonGroup {
+    overflow:hidden !important
+}
+.downloadButtonGroup .kaGiantButton .ka:before {
+    color:#DCCA62;
+}
+.downloadButtonGroup {
+    margin:5px 150px 9px 0
+}
+.downloadButtonGroup .modTools {
+    display: inline;
+}
+.downloadButtonGroup .modTools .kaGiantButton.redButton .ka:before {
+    color: white !important;
+}
+
+.giantButton {
+    padding:6px 16px;
+    font-size:12px !important;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    text-decoration:none
+}
+.giantButton .buttonPic {
+    width:35px;
+    height:27px;
+    margin:-7px 0;
+    float:left
+}
+.siteButton:hover,a:hover .siteButton,.rate.rated a.blank:hover,.kaButton:hover {
+    color:#fff;
+    background:#a8965a;
+    background:-moz-linear-gradient(top, #a8965a 0%, #89783f 100%);
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #a8965a), color-stop(100%, #89783f));
+    background:-webkit-linear-gradient(top, #a8965a 0%, #89783f 100%);
+    background:linear-gradient(to bottom, #a8965a 0%, #89783f 100%);
+    background:-ms-linear-gradient(top, #a8965a 0%, #89783f 100%)
+}
+.ajaxLink,.ajaxLink {
+    border-bottom:none
+}
+h1, h2 {
+    color:#99742e;
+    font-weight:normal;
+    padding:0;
+    margin-top:0;
+    margin:0 0 5px 0
+}
+h1 {
+    font-family:Georgia, "Times New Roman", Times, serif
+}
+h2,h3,h4,h5 {
+    font-family:Tahoma, Verdana, Arial, Helvetica, sans-serif
+}
+h1 #novertmarg {
+    margin-top:0 !important;
+    margin-bottom:0 !important
+}
+.data {
+    border:none;
+    margin:7px 0 20px 0;
+    width:auto;
+    font-size:11px
+}
+.seedLeachContainer {
+    overflow:auto;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:moz-none;
+    -ms-user-select:none;
+    user-select:none
+}
+.seedLeachContainer .seedBlock,.seedLeachContainer .leechBlock,.seedLeachContainer .timeBlock {
+    background-repeat:no-repeat;
+    display:block;
+    float:left;
+    padding:2px 0 2px 0;
+    margin:3px 10px 3px 0
+}
+.seedLeachContainer {
+    overflow:hidden
+}
+.seedBlock {
+    color: #59a018;
+}
+.leechBlock {
+    color: #b36c20;
+}
+.timeBlock {
+    color: #99742e;
+}
+.showmore {
+    width:auto;
+    padding:3px 0;
+    margin-bottom:14px;
+    display:block;
+    font-size:11px;
+    clear:both;
+    line-height:100%;
+    border-bottom:1px solid #dad4c4;
+    text-align:center;
+    text-decoration:none;
+    cursor:pointer;
+    background:#eee8c9;
+    color:#6f6650
+}
+.kaBox:before {
+    height:18px;
+    width:18px !important;
+    border:1px solid #A4A4A4;
+    border-radius:0px !important;
+    line-height:14px;
+    margin-right:3px;
+    font-size:14px !important;
+    padding:0
+}
+.kaBox.ka {
+    cursor:default !important
+}
+.seedLeachContainer {
+    overflow:hidden
+}
+.leechBlock .kaBox:before {
+    background-color:#FFFBEB;
+    border:1px solid #C4AC67;
+    color:#B07C5A;
+    text-align:center
+}
+.seedBlock .kaBox:before {
+    background-color:#F3FFE8;
+    border:1px solid #A0C174;
+    color:#7CB03C
+}
+.timeBlock .kaBox:before {
+    color:#F7F4EE;
+    border:1px solid #EEE;
+    background:#99742E
+}
+.torrentMediaInfo {
+    overflow:auto;
+    clear:both
+}
+.torrentMediaInfo a {
+    text-decoration:none
+}
+.torrentMediaInfo .movieCover {
+    float:left;
+    padding-right:10px;
+    margin-bottom:1em
+}
+.torrentMediaInfo .movieCover img {
+    width: auto;
+    max-width: 200px;
+    height: auto;
+}
+.torrentMediaInfo .showmore {
+    margin-top:5px
+}
+.torrentMediaInfo .showmore:hover {
+    background:#eae4c3;
+    border-bottom:1px solid #c5bd95
+}
+.torrentMediaInfo .showmore.unfolded,.torrentMediaInfo .showmore.folded {
+    margin-bottom:0
+}
+.torrentMediaInfo span.blank {
+    background-image:url(https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png);
+    background-repeat:no-repeat;
+    width:7px;
+    height:6px;
+    display:inline-block
+}
+
+.font11px, small {
+    font-size: 11px;
+    vertical-align: middle;
+    line-height: inherit;
+}
+.line160perc {
+    line-height: 160% !important;
+}
+.lightgrey {
+    color: #999;
+}
+
+.clear {
+    clear:both
+}
+.clearleft {
+    clear:left !important
+}
+.clearright {
+    clear:right
+}
+.margauto {
+    margin:0 auto
+}
+.marg33px {
+    margin:33px
+}
+.marginBot25px {
+    margin-bottom:25px
+}
+.inline {
+    display:inline
+}
+.block {
+    display:block
+}
+.none {
+    display:none
+}
+.novertpad {
+    padding-top:0 !important;
+    padding-bottom:0 !important
+}
+.buttonsline {
+    clear:both;
+    white-space:nowrap;
+    vertical-align:middle;
+    width:auto;
+    padding:0 0 10px 0;
+    overflow:auto
+}
+.buttonsline .buttonGoupText {
+    display:inline-block;
+    margin-left:0.8em
+}
+.buttonsline input {
+    vertical-align:top
+}
+.buttonsline.floatright,.buttonsline.floatleft {
+    clear:none;
+    margin-top:5px
+}
+.buttonsline form {
+    display:inline-block
+}
+h2 .buttonsline {
+    display:inline-block;
+    margin:0 0 -6px 5px
+}
+h2 .smallButtonsline {
+    clear:none;
+    display:inline-block;
+    position:relative;
+    padding:0 0 0 5px;
+    vertical-align:text-bottom
+}
+.commentHeadLine .smallbuttonsline {
+    margin:0
+}
+.commentHeadLine .smallbuttonsline .kaButton,.commentHeadLine .smallbuttonsline .ka {
+    vertical-align:top
+}
+.smallButtonsline {
+    margin:2px 2px 2px 0;
+    vertical-align:top;
+    white-space:nowrap
+}
+#fancybox-content .buttonsline {
+    margin-bottom:0
+}
+.contentTabContainer {
+    width: auto;
+    clear: both;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.spareBlock {
+    width:auto;
+    text-align:center;
+    margin:0 auto 10px auto
+}
+.orwidth {
+    text-align:center;
+    display:inline-block;
+    width:33px
+}
+.goodFake > div {
+    display:inline-block;
+    width:57px
+}
+.goodFake > div.floatright {
+    position:relative;
+    left:3px
+}
+.feedbackpage .goodFakeLine {
+    height:24px;
+    vertical-align:middle
+}
+.feedbackpage .goodFakeLine input {
+    vertical-align:middle
+}
+.fake,.thnx {
+    display:inline-block;
+    width:57px;
+    height:85px;
+    cursor:pointer;
+    position:relative;
+    top:0;
+    z-index:2
+}
+.fake {
+    background:url(https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png) no-repeat -190px -107px
+}
+.thnx {
+    background:url(https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png) no-repeat -190px -20px
+}
+.goodFake .smallButton {
+    width:32px;
+    margin-bottom:5px
+}
+.rating, 
+.rating i {
+    float: right;
+    display: inline;
+    width: 232px;
+    text-align: right;
+}
+.goodFake {
+    float:right;
+    text-align:left;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:moz-none;
+    -ms-user-select:none;
+    user-select:none
+}
+.smallButton.reportFake span {
+    padding:0 0 0 20px
+}
+.goodFake .smallButton span {
+    padding:4px 0
+}
+.siteButton.smallButton,.kaButton.smallButton {
+    padding:0 10px;
+    font-size:11px;
+    text-transform:lowercase;
+    line-height:1.7em
+}
+.siteButton.smallButton .buttonPic,.kaButton.smallButton .buttonPic {
+    width:23px;
+    height:17px;
+    margin:-3px 0 0 -13px
+}
+.commentHeadLine .icon16,.commentHeadLine .icon16.nohover:hover,.commentHeadLine .ka:not(:hover),.commentHeadLine .kaButton:not(:hover) {
+    background:none !important
+}
+
+.siteButton.greenButton.checked,
+.siteButton.kaLikeButton.checked,
+.siteButton.greenButton.checked:hover,
+.siteButton.kaLikeButton.checked:hover {
+    background: transparent linear-gradient(to bottom, #5a7c3d 0%, #648446 100%) repeat scroll 0% 0% !important;
+    text-shadow: 0 1px 0 #435d2c !important
+}
+.siteButton.checked span {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    cursor: default
+}
+.greenButton {
+    background: #8da73e;
+    background: -moz-linear-gradient(top, #8da73e 0%, #789228 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #8da73e), color-stop(100%, #789228));
+    background: -webkit-linear-gradient(top, #8da73e 0%, #789228 100%);
+    background: linear-gradient(to bottom, #8da73e 0%, #789228 100%);
+    background: -ms-linear-gradient(top, #8da73e 0%, #789228 100%);
+    text-shadow: 0 1px 0 #468827
+}
+.greenButton:hover,
+.likeButton:hover,
+a:hover .icon16.greenButton {
+    background: #79971d;
+    background: -moz-linear-gradient(top, #79971d 0%, #638106 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #79971d), color-stop(100%, #638106));
+    background: -webkit-linear-gradient(top, #79971d 0%, #638106 100%);
+    background: linear-gradient(to bottom, #79971d 0%, #638106 100%);
+    background: -ms-linear-gradient(top, #79971d 0%, #638106 100%);
+    text-shadow: 0 1px 0 #3c6d25
+}
+.siteButton:hover,
+a:hover .siteButton,
+.rate.rated a.blank:hover,
+.kaButton:hover {
+    color: #fff;
+    background: #a8965a;
+    background: -moz-linear-gradient(top, #a8965a 0%, #89783f 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a8965a), color-stop(100%, #89783f));
+    background: -webkit-linear-gradient(top, #a8965a 0%, #89783f 100%);
+    background: linear-gradient(to bottom, #a8965a 0%, #89783f 100%);
+    background: -ms-linear-gradient(top, #a8965a 0%, #89783f 100%)
+}
+
+.redButton,
+.nohover:hover .redButton,
+.siteButton.dislikeButton,
+.minusbut {
+    background: #d47e3c;
+    background: -moz-linear-gradient(top, #d47e3c 0%, #c06e2f 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d47e3c), color-stop(100%, #c06e2f));
+    background: -webkit-linear-gradient(top, #d47e3c 0%, #c06e2f 100%);
+    background: linear-gradient(to bottom, #d47e3c 0%, #c06e2f 100%);
+    background: -ms-linear-gradient(top, #d47e3c 0%, #c06e2f 100%);
+    text-shadow: 0 1px 0 #9f5c28
+}
+.redButton:hover,
+a:hover .redButton,
+.siteButton.dislikeButton:hover,
+.minusbut:hover,
+#fakeLink:hover .siteButton.redButton {
+    background: #ab6531;
+    background: -moz-linear-gradient(top, #ab6531 0%, #a25b25 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ab6531), color-stop(100%, #a25b25));
+    background: -webkit-linear-gradient(top, #ab6531 0%, #a25b25 100%);
+    background: linear-gradient(to bottom, #ab6531 0%, #a25b25 100%);
+    background: -ms-linear-gradient(top, #ab6531 0%, #a25b25 100%);
+    text-shadow: 0 1px 0 #905020
+}
+.siteButton.redButton.checked,
+.siteButton.kaDislikeButton.checked,
+.siteButton.redButton.checked:hover,
+.siteButton.kaDislikeButton.checked:hover {
+    background: transparent linear-gradient(to bottom, #82512b 0%, #a25b25 100%) repeat scroll 0% 0% !important;
+    text-shadow: 0 1px 0 #905020 !important
+}
+.siteButton,
+.icon16 {
+    background-color: #c1ad6a;
+    background: #c1ad6a;
+    background: -moz-linear-gradient(top, #c1ad6a 0%, #a28e4b 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c1ad6a), color-stop(100%, #a28e4b));
+    background: -webkit-linear-gradient(top, #c1ad6a 0%, #a28e4b 100%);
+    background: linear-gradient(to bottom, #c1ad6a 0%, #a28e4b 100%);
+    background: -ms-linear-gradient(top, #c1ad6a 0%, #a28e4b 100%);
+    -moz-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08), inset 0 -1px 0 0 rgba(0, 0, 0, 0.03), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+    -webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08), inset 0 -1px 0 0 rgba(0, 0, 0, 0.03), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08), inset 0 -1px 0 0 rgba(0, 0, 0, 0.03), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    border-radius: 2px;
+    margin: 0;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none !important;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -moz-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08), inset 0 -1px 0 0 rgba(0, 0, 0, 0.03), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+    -webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08), inset 0 -1px 0 0 rgba(0, 0, 0, 0.03), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08), inset 0 -1px 0 0 rgba(0, 0, 0, 0.03), inset 0 1px 0 0 rgba(255, 255, 255, 0.2)
+}
+.siteButton {
+    font-size: 11px;
+    text-shadow: 0 1px 0 #8c751e;
+    font-family: Verdana, Geneva, sans-serif;
+    text-align: center;
+    text-decoration: none !important;
+    font-weight: normal !important;
+    vertical-align: middle;
+    white-space: nowrap;
+    line-height: inherit
+}
+.siteButton .buttonPic {
+    display: inline-block;
+    float: left;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    cursor: pointer
+}
+.siteButton.torrentfingers {
+    height: 76px;
+    top: 1px;
+    left: 2px;
+    position: absolute;
+    width: 54px;
+    z-index: 1
+}
+.siteButton.searchButton {
+    display: inline-block;
+    margin: 3px 30px 0 10px;
+    padding: 0 2px;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0;
+    overflow: visible;
+    float: right;
+    background: #e1cf78;
+    background: -moz-linear-gradient(top, #e1cf78 0%, #cfbc63 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e1cf78), color-stop(100%, #cfbc63));
+    background: -webkit-linear-gradient(top, #e1cf78 0%, #cfbc63 100%);
+    background: linear-gradient(to bottom, #e1cf78 0%, #cfbc63 100%);
+    background: -ms-linear-gradient(top, #e1cf78 0%, #cfbc63 100%);
+    -webkit-appearance: none;
+    padding: 9px 26px 9px 26px;
+    letter-spacing: 0.7px;
+    font-size: 15px;
+    text-shadow: 0 1px 0 #e0d08b;
+    color: #5A4B27 !important
+}
+.siteButton.searchButton:hover {
+    background: #c4b160;
+    background: -moz-linear-gradient(top, #c4b160 0%, #baa449 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c4b160), color-stop(100%, #baa449));
+    background: -webkit-linear-gradient(top, #c4b160 0%, #baa449 100%);
+    background: linear-gradient(to bottom, #c4b160 0%, #baa449 100%);
+    background: -ms-linear-gradient(top, #c4b160 0%, #baa449 100%)
+}
+.siteButton:hover span {
+    color: #fff !important
+}
+.likeButton span,
+.dislikeButton span {
+    padding: 7px 8px 7px 8px !important;
+    display: block !important;
+    font-size: 12px;
+    cursor: pointer
+}
+.siteButton.smallButton,
+.kaButton.smallButton {
+    padding: 0 10px;
+    font-size: 11px;
+    text-transform: lowercase;
+    line-height: 1.7em;
+}
+.siteButton.smallButton .buttonPic,
+.kaButton.smallButton .buttonPic {
+    width: 23px;
+    height: 17px;
+    margin: -3px 0 0 -13px
+}
+.siteButton.checkedButton,
+.icon16.checkedButton {
+    opacity: 0.7
+}
+.fake {
+    background:url(https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png) no-repeat -190px -107px
+}
+.thnx {
+    background:url(https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png) no-repeat -190px -20px
+}
+.goodFake .smallButton {
+    width:32px;
+    margin-bottom:5px
+}
+
+.kaButton.smallButton {
+    padding:2px 6px 4px 4px;
+    color:white !important
+}
+.kaButton.smallButton.rightButton {
+    padding:2px 2px 4px 7px
+}
+.kaButton.smallButton.sq16 {
+    padding:2px 1px 4px 1px !important
+}
+.kaButton {
+    background-color:#c1ad6a;
+    background:#c1ad6a;
+    background:-moz-linear-gradient(top, #c1ad6a 0%, #a28e4b 100%);
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #c1ad6a), color-stop(100%, #a28e4b));
+    background:-webkit-linear-gradient(top, #c1ad6a 0%, #a28e4b 100%);
+    background:linear-gradient(to bottom, #c1ad6a 0%, #a28e4b 100%);
+    background:-ms-linear-gradient(top, #c1ad6a 0%, #a28e4b 100%);
+    -moz-box-shadow:inset 0 0 0 1px rgba(0, 0, 0, 0.08), inset 0 -1px 0 0 rgba(0, 0, 0, 0.03), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+    -webkit-box-shadow:inset 0 0 0 1px rgba(0, 0, 0, 0.08), inset 0 -1px 0 0 rgba(0, 0, 0, 0.03), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+    box-shadow:inset 0 0 0 1px rgba(0, 0, 0, 0.08), inset 0 -1px 0 0 rgba(0, 0, 0, 0.03), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+    border-radius:2px;
+    margin:0;
+    border:none;
+    color:#fff;
+    cursor:pointer;
+    text-decoration:none !important;
+    display:inline;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    -moz-box-shadow:inset 0 0 0 1px rgba(0, 0, 0, 0.08), inset 0 -1px 0 0 rgba(0, 0, 0, 0.03), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+    -webkit-box-shadow:inset 0 0 0 1px rgba(0, 0, 0, 0.08), inset 0 -1px 0 0 rgba(0, 0, 0, 0.03), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+    box-shadow:inset 0 0 0 1px rgba(0, 0, 0, 0.08), inset 0 -1px 0 0 rgba(0, 0, 0, 0.03), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+    font-size:11px;
+    text-shadow:0 1px 0 #8c751e;
+    font-family:Verdana, Geneva, sans-serif;
+    text-align:center;
+    text-decoration:none !important;
+    font-weight:normal !important;
+    vertical-align:middle;
+    white-space:nowrap;
+    line-height:inherit
+}
+.kaButton .ka {
+    position:relative !important;
+    top:1.5px;
+    text-transform:none !important
+}
+.kaButton .ka-180 {
+    position:relative !important;
+    top:1.5px
+}
+.relative {
+    position:relative !important
+}
+
+
+/* TONYS EDITIONG */
+
+.doublecelltable tr td {
+    vertical-align: top
+}
+.doublecelltable tr td td {
+    vertical-align: inherit
+}
+.doublecelltable tr td.sidebarCell {
+    padding-left: 0;
+    vertical-align: top
+}
+ul.tabNavigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    text-align: right
+}
+ul.tabNavigation li {
+    display: inline-block;
+    white-space: nowrap;
+    margin: 5px 0 0 0;
+}
+ul.tabNavigation li a {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border: 1px solid #554829;
+    border-bottom: none;
+    padding: 0 1px;
+    text-decoration: none;
+    display: block;
+    z-index: 2;
+    position: relative;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    color: #FFEEB4;
+}
+ul.tabNavigation li a:hover {
+    color: #efd787
+}
+ul.tabNavigation li a span {
+    text-align: center;
+    padding: 4px 12px;
+    display: block;
+    font-size: 11px;
+    white-space: nowrap;
+    position: relative;
+    line-height: 13px;
+}
+ul.tabNavigation li.rssInside a span {
+    padding-right: 35px
+}
+.tabNavigation .menuValue,
+#navstyle .menuValue,
+.smallTorrentBadge {
+    color: #594c2c;
+    text-shadow: none;
+    border-left: 1px solid #56492A;
+    border-bottom: 1px solid #56492A;
+    background: #ffeeb4;
+    background: -moz-linear-gradient(top, #ffeeb4 1%, #fff9e8 6%, #ffeeb4 11%, #f2e3ab 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop 1%, #ffeeb4, color-stop 6%, #fff9e8, color-stop 11%, #ffeeb4, color-stop 100%, #f2e3ab);
+    background: -webkit-linear-gradient(top, #ffeeb4 1%, #fff9e8 6%, #ffeeb4 11%, #f2e3ab 100%);
+    background: -o-linear-gradient(top, #ffeeb4 1%, #fff9e8 6%, #ffeeb4 11%, #f2e3ab 100%);
+    background: -ms-linear-gradient(top, #ffeeb4 1%, #fff9e8 6%, #ffeeb4 11%, #f2e3ab 100%);
+    background: linear-gradient(to bottom, #ffeeb4 1%, #fff9e8 6%, #ffeeb4 11%, #f2e3ab 100%);
+    margin: -1px 0
+}
+ul.tabNavigation .selectedTab,
+ul.tabNavigation .selectedTab:hover {
+    background: #fff;
+    color: #413a2a;
+    text-shadow: none
+}
+ul.tabNavigation a.darkButton.selectedTab .menuValue,
+ul.tabNavigation a.darkButton.selectedTab:hover .menuValue {
+    border: none;
+    color: #fff;
+    background: #666
+}
+ul.tabNavigation a:hover {
+    color: #efd787
+}
+hr.tabsSeparator {
+    background: #5b5338;
+    display: block;
+    height: 1px;
+    border: 0;
+    width: 100%;
+    clear: both;
+    top: -1px;
+    margin: 0 0 10px 0;
+    position: relative
+}
+.darkButton,
+.menuValue,
+.circleButton {
+    background: #766843;
+    background: -moz-linear-gradient(top, #766843 0%, #645736 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #766843), color-stop(100%, #645736));
+    background: -webkit-linear-gradient(top, #766843 0%, #645736 100%);
+    background: linear-gradient(to bottom, #766843 0%, #645736 100%);
+    background: -ms-linear-gradient(top, #766843 0%, #645736 100%);
+    text-shadow: -1px 1px 0 #56492a;
+    color: #FFEEB4;
+    text-decoration: none
+}
+.darkButton:hover,
+.sliderbox a:hover .menuValue,
+.circleButton:hover {
+    background: #6b5e3c;
+    background: -moz-linear-gradient(top, #6b5e3c 0%, #544728 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #6b5e3c), color-stop(100%, #544728));
+    background: -webkit-linear-gradient(top, #6b5e3c 0%, #544728 100%);
+    background: linear-gradient(to bottom, #6b5e3c 0%, #544728 100%);
+    background: -ms-linear-gradient(top, #6b5e3c 0%, #544728 100%);
+    text-shadow: -1px 1px 0 #3D3010;
+    color: #FFEEB4
+}
+.advertDownload .darkButton {
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5px;
+    float: left;
+    margin-left: -400px
+}
+.advertDownload .darkButton span {
+    padding: 18px 0 17px 0;
+    min-width: 380px;
+    font-size: 30px;
+    text-align: center;
+    color: #FFEEB4;
+    text-transform: uppercase;
+    margin: 1px 2px;
+    border-top: 1px solid #aea590;
+    display: inline-block
+}
+.selectedTab .menuValue,
+.selectedTab:hover .menuValue,
+h2 .menuValue,
+h2:hover .menuValue {
+    color: #fff;
+    padding: 1px 3px 1px 3px
+}
+h2 .menuValue {
+    position: relative;
+    top: -2px
+}
+.tabs {
+    margin-top: 5px;
+    clear: both;
+    overflow: auto
+}
+.inlineblock,
+a.inlineblock {
+    display: inline-block
+}
+.sliderbox .inlineblock {
+    display: inline-block !important
+}
+.floatleft {
+    float: left !important
+}
+.floatright {
+    float: right !important
+}
+.width100perc,td.width100perc {
+    width: 100% !important;
+}
+.quote,blockquote,.accentbox {
+    background-color: #f3edd9;
+    border: 1px solid #e7dbb2;
+    margin: 10px 0;
+    padding: 8px 20px 8px 12px;
+    display: block;
+    color: #767261
+}
+
+.torrentMediaInfo span.blank {
+    background-image:url(https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png);
+    background-repeat:no-repeat;
+    width:7px;
+    height:6px;
+    display:inline-block
+}
+.switcherBox {
+    display: inline-block;
+    padding: 0;
+    border-radius: 3px;
+    font-size: 11px;
+    clear: both;
+    margin-bottom: 5px;
+    font-weight: bold
+}
+td .switcherBox {
+    padding-top: 11px
+}
+.switcherBox a {
+    cursor: pointer
+}
+.switcherBox a.active {
+    color: #5f4e18;
+    text-decoration: none
+}
+.switcherBox .switchLeft span,
+.switcherBox .switchRight span {
+    width: 20px;
+    height: 12px;
+    border: 1px solid #646250;
+    padding: 3px 0;
+    margin: -1px 0 0 0
+}
+.switcherBox .switchLeft.active span,
+.switcherBox .switchRight.active span,
+.switcherBox:hover .switchLeft:hover span,
+.switcherBox:hover .switchRight:hover span,
+.switcherBox:hover .switchLeft:hover.active span,
+.switcherBox:hover .switchRight:hover.active span {
+    background: #c1ad6a;
+    background: -moz-linear-gradient(top, #c1ad6a 0%, #a28e4b 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c1ad6a), color-stop(100%, #a28e4b));
+    background: -webkit-linear-gradient(top, #c1ad6a 0%, #a28e4b 100%);
+    background: linear-gradient(to bottom, #c1ad6a 0%, #a28e4b 100%);
+    background: -ms-linear-gradient(top, #c1ad6a 0%, #a28e4b 100%)
+}
+.switcherBox .switchLeft span,
+.switcherBox .switchRight span,
+.switcherBox:hover .switchLeft.active span,
+.switcherBox:hover .switchRight.active span,
+.switcherBox:hover .switchLeft span,
+.switcherBox:hover .switchRight span {
+    background: #5d5b4b url(https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png) no-repeat 3px 1px
+}
+.switcherBox .switchLeft,
+.switcherBox .switchRight {
+    display: inline-block
+}
+.switcherBox .switchLeft span {
+    float: right;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    margin-left: 5px
+}
+.switcherBox .switchRight span {
+    float: left;
+    margin-right: 5px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px
+}
+.switcherBox .switchLeft span,
+.switcherBox .switchRight span,
+.switcherBox:hover .switchLeft.active span,
+.switcherBox:hover .switchRight.active span,
+.switcherBox:hover .switchLeft span,
+.switcherBox:hover .switchRight span {
+    opacity: 0.7
+}
+a.likeButton label {
+    background: url(https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png) no-repeat -82px -142px;
+    bottom: -1px
+}
+a.dislikeButton label {
+    background: url(https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png) no-repeat -102px -143px;
+    bottom: -2px
+}
+.centerBordderRow {
+    background-image: url(https://katcommunity-631f.kxcdn.com/cgi/static/images/dataTableBorder.gif);
+    background-repeat: repeat-y;
+    background-position: center center
+}
+.pages a,
+.pages .blank:hover {
+    display: inline-block;
+    text-decoration: none;
+    vertical-align: top;
+    font-size: 12px;
+    text-align: center;
+    padding: 0 1px;
+    margin: 0 4px 2px 0
+}
+.pages.floatright a,
+.pages.floatright .blank:hover {
+    margin: 0 0 2px 4px
+}
+.pages .blank {
+    background: none
+}
+.pages .blank,
+.pages .blank:hover {
+    background: none;
+    background: url(https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png) repeat-x -150px -20px !important;
+    width: 21px !important;
+    padding: 10px 0 !important;
+    cursor: default;
+    box-shadow: none !important
+}
+.pages .specificPage {
+    cursor: pointer !important
+}
+.pages .pagesCount {
+    border: none;
+    background: none;
+    color: #666;
+    display: inline-block;
+    margin: 5px 10px 0 10px
+}
+.pages a.active,
+.pages a.active:hover {
+    background: #656565;
+    cursor: default;
+    text-shadow: -1px 1px #666
+}
+.giantIcon {
+    -moz-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08), inset 0 -1px 0 0 rgba(0, 0, 0, 0.03), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+    -webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08), inset 0 -1px 0 0 rgba(0, 0, 0, 0.03), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08), inset 0 -1px 0 0 rgba(0, 0, 0, 0.03), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+    width: 31px;
+    height: 27px;
+    padding: 0;
+    display: inline-block;
+    margin-right: 0.1em
+}
+.giantIcon.magnetlinkButton {
+    background: #998750 url("https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png") -150px -150px no-repeat;
+    background: url("https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png") -150px -150px no-repeat, url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzk5ODc1MCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzhjN2E0MCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+    background: url("https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png") -150px -150px no-repeat, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #998750), color-stop(100%, #8c7a40));
+    background: url("https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png") -150px -150px no-repeat, -moz-linear-gradient(#998750, #8c7a40);
+    background: url("https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png") -150px -150px no-repeat, -webkit-linear-gradient(#998750, #8c7a40);
+    background: url("https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png") -150px -150px no-repeat, linear-gradient(#998750, #8c7a40)
+}
+.giantIcon.magnetlinkButton:hover {
+    background: url("https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png") -150px -150px no-repeat, url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzg1NzU0MCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzdlNmIyZSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+    background: url("https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png") -150px -150px no-repeat, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #857540), color-stop(100%, #7e6b2e));
+    background: url("https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png") -150px -150px no-repeat, -moz-linear-gradient(#857540, #7e6b2e);
+    background: url("https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png") -150px -150px no-repeat, -webkit-linear-gradient(#857540, #7e6b2e);
+    background: url("https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png") -150px -150px no-repeat, linear-gradient(#857540, #7e6b2e)
+}
+.giantIcon.magnetlinkButton.checkedButton {
+    opacity: 0.7
+}
+.giantIcon.bookmarkButton {
+    background: #998750 url("https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png") -150px -175px no-repeat;
+    background: url("https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png") -150px -175px no-repeat, url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzk5ODc1MCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzhjN2E0MCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+    background: url("https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png") -150px -175px no-repeat, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #998750), color-stop(100%, #8c7a40));
+    background: url("https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png") -150px -175px no-repeat, -moz-linear-gradient(#998750, #8c7a40);
+    background: url("https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png") -150px -175px no-repeat, -webkit-linear-gradient(#998750, #8c7a40);
+    background: url("https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png") -150px -175px no-repeat, linear-gradient(#998750, #8c7a40)
+}
+.giantIcon.bookmarkButton:hover {
+    background: url("https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png") -150px -175px no-repeat, url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzg1NzU0MCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzdlNmIyZSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+    background: url("https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png") -150px -175px no-repeat, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #857540), color-stop(100%, #7e6b2e));
+    background: url("https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png") -150px -175px no-repeat, -moz-linear-gradient(#857540, #7e6b2e);
+    background: url("https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png") -150px -175px no-repeat, -webkit-linear-gradient(#857540, #7e6b2e);
+    background: url("https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png") -150px -175px no-repeat, linear-gradient(#857540, #7e6b2e)
+}
+.giantIcon.bookmarkButton.checkedButton {
+    opacity: 0.7
+}
+.giantIcon.rssButton {
+    background: #998750 url("https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png") -150px -200px no-repeat;
+    background: url("https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png") -150px -200px no-repeat, url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzk5ODc1MCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzhjN2E0MCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+    background: url("https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png") -150px -200px no-repeat, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #998750), color-stop(100%, #8c7a40));
+    background: url("https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png") -150px -200px no-repeat, -moz-linear-gradient(#998750, #8c7a40);
+    background: url("https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png") -150px -200px no-repeat, -webkit-linear-gradient(#998750, #8c7a40);
+    background: url("https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png") -150px -200px no-repeat, linear-gradient(#998750, #8c7a40)
+}
+.giantIcon.rssButton:hover {
+    background: url("https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png") -150px -200px no-repeat, url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzg1NzU0MCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzdlNmIyZSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+    background: url("https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png") -150px -200px no-repeat, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #857540), color-stop(100%, #7e6b2e));
+    background: url("https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png") -150px -200px no-repeat, -moz-linear-gradient(#857540, #7e6b2e);
+    background: url("https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png") -150px -200px no-repeat, -webkit-linear-gradient(#857540, #7e6b2e);
+    background: url("https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png") -150px -200px no-repeat, linear-gradient(#857540, #7e6b2e)
+}
+.giantIcon.rssButton.checkedButton {
+    opacity: 0.7
+}
+.siteButton.verifTorrentButton {
+    padding-left: 0
+}
+.siteButton.verifTorrentButton .buttonPic {
+    background: url("https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png") -142px 5px no-repeat, url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzk5ODc1MCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzhjN2E0MCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+    background: url("https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png") -142px 5px no-repeat, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #998750), color-stop(100%, #8c7a40));
+    background: url("https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png") -142px 5px no-repeat, -moz-linear-gradient(#998750, #8c7a40);
+    background: url("https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png") -142px 5px no-repeat, -webkit-linear-gradient(#998750, #8c7a40);
+    background: url("https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png") -142px 5px no-repeat, linear-gradient(#998750, #8c7a40);
+    border-right: 1px solid #a6945a;
+    margin-right: 12px
+}
+.siteButton.verifTorrentButton:hover .buttonPic {
+    background: url("https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png") -142px 5px no-repeat, url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzg1NzU0MCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzdlNmIyZSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+    background: url("https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png") -142px 5px no-repeat, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #857540), color-stop(100%, #7e6b2e));
+    background: url("https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png") -142px 5px no-repeat, -moz-linear-gradient(#857540, #7e6b2e);
+    background: url("https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png") -142px 5px no-repeat, -webkit-linear-gradient(#857540, #7e6b2e);
+    background: url("https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png") -142px 5px no-repeat, linear-gradient(#857540, #7e6b2e);
+    border-right: 1px solid #a6945a
+}
+#desc {
+    padding-bottom: 20px
+}
+#desc img,
+.commentcontent img,
+.ideaBox img,
+.profileCloud img,
+.maximgwidth img,
+.textcontent img,
+.data img,
+.communityLayout img {
+    max-width: 620px;
+    height: auto
+}
+ul.textcontent,
+.textcontent ul {
+    margin-left: 10px;
+    margin-bottom: 10px
+}
+.textcontent li:before {
+    content: "• ";
+    color: #888;
+    margin-left: -10px
+}
+.textcontent.noBulletsList li:before {
+    content: "";
+    color: #888;
+    margin-left: 0
+}
+.textcontent p {
+    margin: 0 0 20px 0
+}
+.textcontent {
+    font-size: 12px;
+    line-height: 150%
+}
+.torrentFileList {
+    width: 100%
+}
+.torrentFileList tr:hover {
+    background: #f4f5e9
+}
+.torrentFileList tr td {
+    padding: 3px 0;
+    border: 0;
+    vertical-align: middle !important;
+    border-bottom: 1px solid #ccc
+}
+.torrentFileList tr.innerFolder {
+    background: url(https://katcommunity-631f.kxcdn.com/cgi/static/images/torTreeFinder.png) repeat-y 2px 0
+}
+.torrentFileList tr.innerFolder > td {
+    border-bottom: 0 none
+}
+.torrentFileList tr.innerFolder td td span {
+    margin-left: 0
+}
+.torrentFileList .torTree {
+    border-bottom: none;
+    background: url(https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png) no-repeat -270px -175px;
+    padding-left: 15px;
+    width: 1px
+}
+.torrentFileList tr.last .torTree,
+.torrentFileList tr.innerFolder > .torTree,
+.torrentFileList tbody:last-child .torTree {
+    background: url(https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png) no-repeat -270px -200px
+}
+.torrentFileList tr.last .torTree {
+    background-color: #fff
+}
+.torrent_files {
+    margin-bottom: 20px
+}
+.torrent_files .folder,
+.torrent_files .folderopen {
+    font-weight: bold;
+    border-bottom: none;
+    display: block;
+    font-size: 12px;
+    padding: 5px 5px 4px 0;
+    background: #fff
+}
+.torrent_files .folder span.foldericon,
+.torrent_files .folderopen span.foldericon {
+    background: url(https://katcommunity-631f.kxcdn.com/cgi/static/images/spriteContent.png) no-repeat;
+    display: block;
+    float: left;
+    width: 20px;
+    height: 13px;
+    margin: 2px 0 0 0;
+    padding: 0 5px 0 0
+}
+.torrent_files span.folderopen span.foldericon {
+    background-position: -310px -65px
+}
+.torrent_files span.folder span.foldericon {
+    background-position: -310px -50px
+}
+.torrent_files span.folder a,
+.torrent_files span.folderopen a {
+    color: #333
+}
+.torrent_files .innerFolder span.folder a,
+.torrent_files .innerFolder span.folderopen a {
+    color: #333
+}
+.torrent_files li span.folder a:hover,
+.torrent_files li span.folderopen a:hover {
+    text-decoration: none;
+    color: #666
+}
+.torrentFileList .torFileIcon {
+    padding-right: 4px
+}
+.torrentFileList .torFileName {
+    width: 100%
+}
+.torrentFileList .torFileSize {
+    white-space: nowrap;
+    padding-right: 5px;
+    text-align: right
+}
+.widgetSeed,
+.widgetLeech,
+.widgetSize {
+    font-size: 11px
+}
+.widgetSeed {
+    position: absolute;
+    left: 290px;
+    top: 10px;
+    color: #5b8311
+}
+.widgetLeech {
+    position: absolute;
+    left: 410px;
+    top: 10px;
+    color: #7c6624
+}
+.widgetSize {
+    position: absolute;
+    top: 12px;
+    left: 195px;
+    color: #564a25
+}
+.widgetSize strong span {
+    font-weight: normal
+}
+.widgetSize .torType {
+    margin: -1px 3px 0 0
+}
+.widgetName {
+    color: #baab7c;
+    position: absolute;
+    top: 35px;
+    left: 5px;
+    width: 520px;
+    white-space: nowrap;
+    overflow: hidden
+}
+.commentbody .icon16 span,
+.sidebarCell .icon16 span,
+.badge .icon16 span,
+.textButton,
+h2 .icon16 span,
+.dataList .icon16 span {
+    margin: 0
+}
+.dataList {
+    padding: 0 0 0 210px;
+    box-sizing: border-box;
+}
+.dataList ul {
+    width: 49.8%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+}
+.dataList ul li {
+    display: block;
+    padding: 0 20px 10px 0
+}
+.dataList ul li strong {
+    width: 100px
+}
+.dataList #summary {
+    margin-top: 15px;
+}
+.iaconbox {
+    white-space: nowrap;
+    text-align: center;
+    padding-left: 8px;
+}
+.center {
+    text-align: center !important;
+}
+
+#report_button {
+    min-width:100px;
+    max-height:18px !important;
+    display:inline-block;
+    width:auto;
+    padding-top:0px;
+    line-height:12px
+}
+.redButton .buttonPic {
+    border-right:1px solid #ca7b3e
+}
+.redButton,.nohover:hover .redButton,.siteButton.dislikeButton,.minusbut {
+    background:#d47e3c;
+    background:-moz-linear-gradient(top, #d47e3c 0%, #c06e2f 100%);
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #d47e3c), color-stop(100%, #c06e2f));
+    background:-webkit-linear-gradient(top, #d47e3c 0%, #c06e2f 100%);
+    background:linear-gradient(to bottom, #d47e3c 0%, #c06e2f 100%);
+    background:-ms-linear-gradient(top, #d47e3c 0%, #c06e2f 100%);
+    text-shadow:0 1px 0 #9f5c28
+}
+.redButton:hover,a:hover .redButton,.siteButton.dislikeButton:hover,.minusbut:hover,#fakeLink:hover .siteButton.redButton {
+    background:#ab6531;
+    background:-moz-linear-gradient(top, #ab6531 0%, #a25b25 100%);
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #ab6531), color-stop(100%, #a25b25));
+    background:-webkit-linear-gradient(top, #ab6531 0%, #a25b25 100%);
+    background:linear-gradient(to bottom, #ab6531 0%, #a25b25 100%);
+    background:-ms-linear-gradient(top, #ab6531 0%, #a25b25 100%);
+    text-shadow:0 1px 0 #905020
+}
+.siteButton.redButton.checked,.siteButton.kaDislikeButton.checked,.siteButton.redButton.checked:hover,.siteButton.kaDislikeButton.checked:hover {
+    background:transparent linear-gradient(to bottom, #82512b 0%, #a25b25 100%) repeat scroll 0% 0% !important;
+    text-shadow:0 1px 0 #905020 !important
+}
+
+.valueBubble {
+    position: absolute;
+    font-family: sans-serif;
+    color: #fc7208;
+    background: #fc7208;
+    height: 8px;
+    width: 8px;
+    top: 9px;
+    left: 25px;
+    border: 2px solid #594c2d;
+    transition: 0.1s all;
+    border-radius: 50%
+}
+
+.valueBubble span {
+    top: -22px;
+    left: 10px;
+    position: absolute;
+    font-family: sans-serif;
+    color: #fc7208;
+    font-size: 10px;
+    font-style: normal !important;
+    font-weight: 800;
+    text-shadow: none
+}
+
+.botmarg10px { margin-bottom: 10px; }
+
+/* KAT fonts
+------------------------------------------------------- */
+@font-face {
+    font-family: "katfont";
+    src: url(https://katcr.co/new/arbcdn/katfont-Regular-v2.woff) format('woff'), url(https://katcr.co/new/arbcdn/katfont-Regular-v2.svg) format('svg')
+}
+.sliderbox ul li #aclrow a {
+    padding: 4px 0 4px 0px
+}
+.ka:before,
+.poster .karma_allow a:after {
+    font-family: "katfont";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    speak: none;
+    display: inline-block;
+    text-decoration: none!important;
+    width: 1em;
+    margin-right: 0.2em;
+    text-align: center;
+    font-variant: normal!important;
+    text-transform: none!important;
+    line-height: 16px;
+    margin-left: 0.2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    cursor: pointer
+}
+.ka,
+.ka:hover,
+.ka:hover:before,
+.ka:before,
+.ka16, {
+    text-decoration: none!important;
+    font-variant: normal!important;
+    text-transform: none!important
+}
+.ka16, 
+.poster .karma_allow a:after /* Make karma (rating) links into buttons */ {
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    background: #c1ad6a;
+    background: -moz-linear-gradient(top, #c1ad6a 0%, #a28e4b 100%);
+    background: -webkit-linear-gradient(top, #c1ad6a 0%, #a28e4b 100%);
+    background: -ms-linear-gradient(top, #c1ad6a 0%, #a28e4b 100%);
+    background: linear-gradient(to bottom, #c1ad6a 0%, #a28e4b 100%);
+    text-shadow: 0 1px 0 #867026;
+    padding: 2px 0;
+    border-radius: 2px;
+    height: 16px;
+    line-height: 14px!important;
+    width: 20px;
+    text-align: center;
+    margin: 0 0 1px 0
+}
+.ka16:hover,
+.poster .karma_allow a:hover:after /* Make karma (rating) links into buttons */ {
+    color: white;
+    background: #a28e4b;
+}
+.ka16 em {
+    font: verdana normal 0.5em;
+    vertical-align: middle;
+    display: inline-block;
+    -webkit-font-smoothing: subpixel-antialiased;
+    padding: 0 4px 0 1px
+}
+a:hover .ka16 {
+    background: #a28e4b
+}
+.ka-overlay {
+    position: absolute;
+    z-index: 11;
+    font-size: 300%;
+    color: white;
+    line-height: 150%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4)
+}
+.ka-500 {
+    font-size: 500%;
+    line-height: 170%
+}
+.ka20 {
+    font-size: 23px;
+    height: 16px;
+    line-height: 16px
+}
+.ka-red,
+.poster .karma_allow a[href*="smite"]:after /* Make karma (rating) links into buttons */ {
+    background: #d47e3c!important;
+    text-shadow: 0 1px 0 #d47e3c
+}
+.ka-red:hover,
+.poster .karma_allow a[href*="smite"]:hover:after {
+    background: #ab6531!important
+}
+.ka-green {
+    background: #8da73e!important;
+    text-shadow: 0 1px 0 #8da73e
+}
+.ka-green:hover {
+    background: #79971d!important
+}
+.ka-grey {
+    background: #7a7a7a!important;
+    text-shadow: 0 1px 0 #7a7a7a
+}
+.ka-grey:hover {
+    background: #656565!important
+}
+.commentHeadLine .ka-textbutton,
+.commentHeadLine .ka16 {
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.08) inset, 0px -1px 0px 0px rgba(0, 0, 0, 0.03) inset, 0px 1px 0px 0px rgba(255, 255, 255, 0.2) inset
+}
+.commentHeadLine .ka-textbutton.ka16,
+.commentHeadLine .ka16.ka16 {
+    width: unset
+}
+.commentHeadLine .ka:not(:hover) {
+    background: transparent none repeat scroll 0% 0%!important;
+    text-shadow: 0 1px 0 #7a7a7a
+}
+.ka-disabled {
+    cursor: default!important;
+    background: #b5b5b5!important;
+    text-shadow: 0px 1px 0px #A2A2A2
+}
+.ka-disabled:hover {
+    background: #b5b5b5!important
+}
+.ka img {
+    position: absolute;
+    margin: 2px 0 0 -9px
+}
+.ka-textbutton {
+    width: auto
+}
+.ka-textbutton i {
+    text-decoration: none;
+    font-family: Verdana, Geneva, sans-serif!important;
+    white-space: nowrap;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 0;
+    padding: 0 5px 0 2px
+}
+.ka-vul2 {
+    color: #744ace!important;
+    width: 13px;
+    font-size: 20px;
+    height: 10px;
+    line-height: 0.6em
+}
+.stack-icon {
+    position: absolute;
+    text-align: center;
+    left: 0
+}
+.sliderbox ul li a {
+    padding: 4px 0 4px 0px;
+    position: relative
+}
+.retinaStatus {
+    font-size: 26px
+}
+.retinaFileType {
+    margin-left: -1em;
+    font-size: 200%;
+    vertical-align: middle
+}
+.ka-180::before {
+    display: inline-block;
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    top: 5px;
+    position: relative
+}
+.ka-no-background {
+    background-image: none!important
+}
+.ka-270::before {
+    display: inline-block;
+    -ms-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+    top: 2px;
+    right: 2px;
+    position: relative
+}
+.ka-90::before {
+    display: inline-block;
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    top: 2px;
+    left: 2px;
+    position: relative
+}
+.ka16.kasmall,
+.poster .karma_allow a:after {
+    width: 16px;
+    height: 13px;
+}
+.ka16.kasmall:before,
+.poster .karma_allow a:after {
+    line-height: 10px !important;
+    font-size: 11px;
+    padding-left: 0px;
+    width: 1em;
+    height: 1em;
+    top: 2px;
+    position: relative;
+}
+.ka.statusIcon {
+    background-image: none;
+    line-height: 12px;
+    cursor: default!important;
+    margin: 0;
+    width: 1em
+}
+.ka-torrent:before {
+    content: ""
+}
+.ka-torrent-add:before {
+    content: ""
+}
+.ka-torrent-remove:before {
+    content: ""
+}
+.ka-torrent-accept:before {
+    content: ""
+}
+.ka-torrent-delete:before {
+    content: ""
+}
+.ka-torrent-move:before {
+    content: ""
+}
+.ka-comment:before,
+.ka-quote:before {
+    content: ""
+}
+.ka-comment-add:before {
+    content: ""
+}
+.ka-comment-remove:before {
+    content: ""
+}
+.ka-comment-accept:before {
+    content: ""
+}
+.ka-comment-delete:before {
+    content: ""
+}
+.ka-comment-move:before {
+    content: ""
+}
+.ka-user:before {
+    content: ""
+}
+.ka-user-add:before {
+    content: ""
+}
+.ka-user-remove:before {
+    content: ""
+}
+.ka-user-accept:before {
+    content: ""
+}
+.ka-user-delete:before {
+    content: ""
+}
+.ka-user-move:before {
+    content: ""
+}
+.ka-idea:before {
+    content: ""
+}
+.ka-idea-add:before {
+    content: ""
+}
+.ka-idea-remove:before {
+    content: ""
+}
+.ka-idea-accept:before {
+    content: ""
+}
+.ka-idea-delete:before {
+    content: ""
+}
+.ka-idea-move:before {
+    content: ""
+}
+.ka-preview:before,
+.ka-accept:before {
+    content: ""
+}
+.ka-delete:before {
+    content: ""
+}
+.ka-folder:before,
+.markeredBlock.torType.folderType:before {
+    content: ""
+}
+.ka-document:before,
+.markeredBlock.torType.undefinedType:before,
+.markeredBlock.torType:before {
+    content: ""
+}
+.ka-faq:before,
+.markeredBlock.torType.nfoType:before {
+    content: ""
+}
+.ka-music-note:before,
+.markeredBlock.torType.musicType:before {
+    content: ""
+}
+.ka-bookmark:before,
+.markeredBlock.torType.pdfType:before {
+    content: ""
+}
+.ka-unknown:before,
+.markeredBlock.torType.zipType:before {
+    content: ""
+}
+.ka-text:before,
+.markeredBlock.torType.txtType:before {
+    content: ""
+}
+.ka-settings:before,
+.markeredBlock.torType.exeType:before {
+    content: ""
+}
+.ka-camera:before,
+.markeredBlock.torType.pictureType:before {
+    content: ""
+}
+.ka-film:before,
+.ka-movie:before,
+.markeredBlock.torType.filmType:before {
+    content: ""
+}
+.ka-flash:before,
+.markeredBlock.torType.flashType:before {
+    content: ""
+}
+.ka-plus:before {
+    content: ""
+}
+.ka-minus:before {
+    content: ""
+}
+.ka-share:before {
+    content: ""
+}
+.ka-report:before {
+    content: ""
+}
+.ka-announce:before {
+    content: ""
+}
+.ka-community:before {
+    content: ""
+}
+.ka-achievement:before {
+    content: ""
+}
+.ka-tag:before {
+    content: ""
+}
+.ka-tags:before {
+    content: ""
+}
+.ka-users:before {
+    content: ""
+}
+.ka-verify:before,
+.ka-unverify:before {
+    content: ""
+}
+.ka-star:before,
+.ka-unstar:before {
+    content: ""
+}
+.ka-message:before {
+    content: ""
+}
+.ka-arrow-up:before,
+.ka-arrow-right:before,
+.ka-arrow-down:before,
+.ka-arrow-left:before {
+    content: ""
+}
+.ka-merge:before {
+    content: ""
+}
+.ka-mute:before {
+    content: ""
+}
+.ka-edit:before {
+    content: ""
+}
+.ka-search:before,
+.ka-zoom:before {
+    content: ""
+}
+.ka-pin:before {
+    content: ""
+}
+.ka-follow:before {
+    content: ""
+}
+.ka-unfollow:before {
+    content: ""
+}
+.ka-magnet:before {
+    content: ""
+}
+.ka-lock:before {
+    content: ""
+}
+.ka-unlock:before {
+    content: ""
+}
+.ka-arrow2-up:before,
+.ka-arrow2-right:before,
+.ka-arrow2-down:before,
+.ka-arrow2-left:before {
+    content: ""
+}
+.ka-arrow3-up:before,
+.ka-arrow3-right:before,
+.ka-arrow3-down:before,
+.ka-arrow3-left:before {
+    content: ""
+}
+.ka-thumbs-up:before,
+.poster .karma_allow a[href*="applaud"]:after {
+    content: ""
+}
+.ka-thumbs-down:before,
+.poster .karma_allow a[href*="smite"]:after {
+    content: ""
+}
+.ka-bullet:before {
+    content: ""
+}
+.ka-time:before {
+    content: ""
+}
+.ka-rss:before {
+    content: ""
+}
+.ka-key:before {
+    content: ""
+}
+.ka-reply:before {
+    content: ""
+}
+.ka-refresh:before {
+    content: ""
+}
+.ka-list:before {
+    content: ""
+}
+.ka-list2:before {
+    content: ""
+}
+.ka-sound:before {
+    content: ""
+}
+.ka-eye:before {
+    content: ""
+}
+.ka-poll:before {
+    content: ""
+}
+.ka-IP:before {
+    content: ""
+}
+.ka-IP-ban:before {
+    content: ""
+}
+.ka-DMCA:before {
+    content: ""
+}
+.ka-link:before,
+.ka-url:before,
+.ka-image-link:before {
+    content: ""
+}
+.ka-bold:before,
+.ka-b:before {
+    content: ""
+}
+.ka-italic:before,
+.ka-i:before {
+    content: ""
+}
+.ka-underline:before,
+.ka-u:before {
+    content: ""
+}
+.ka-strike:before,
+.ka-s:before {
+    content: ""
+}
+.ka-image:before,
+.ka-image-upload:before {
+    content: ""
+}
+.ka-align:before,
+.ka-align-left:before {
+    content: ""
+}
+.ka-align-right:before {
+    content: ""
+}
+.ka-align-center:before {
+    content: ""
+}
+.ka-align-justify:before {
+    content: ""
+}
+.ka-list-bullet:before {
+    content: ""
+}
+.ka-list-numeric:before {
+    content: ""
+}
+.ka-list-additem:before {
+    content: ""
+}
+.ka-size-small:before,
+.ka-size-100:before,
+.ka-size-200:before,
+.ka-size:before {
+    content: ""
+}
+.ka-code:before {
+    content: ""
+}
+.ka-color:before {
+    content: ""
+}
+.ka-youtube:before {
+    content: ""
+}
+.ka-smiles:before {
+    content: ""
+}
+.ka-attention:before,
+.ka-spoiler:before {
+    content: ""
+}
+.ka-folder2:before {
+    content: ""
+}
+.ka-settings2:before {
+    content: ""
+}
+.ka-calendar:before {
+    content: ""
+}
+.ka-unpin:before {
+    content: ""
+}
+.ka-eye-off:before {
+    content: ""
+}
+.ka-sup:before {
+    content: ""
+}
+.ka-sub:before {
+    content: ""
+}
+.ka-flag:before {
+    content: ""
+}
+.ka-toggle-on:before {
+    content: ""
+}
+.ka-toggle-off:before {
+    content: ""
+}
+.ka-firefox:before {
+    content: ""
+}
+.ka-facebook:before {
+    content: ""
+}
+.ka-twitter:before {
+    content: ""
+}
+.ka-kat:before {
+    content: ""
+}
+.ka-irc:before {
+    content: ""
+}
+.ka-chrome:before {
+    content: ""
+}
+.ka-opera:before {
+    content: ""
+}
+.ka-ie:before {
+    content: ""
+}
+.ka-utorrent:before {
+    content: ""
+}
+.ka-layout-sidebar:before {
+    content: ""
+}
+.ka-layout-sidebar2:before {
+    content: ""
+}
+.ka-imdb:before {
+    content: ""
+}
+.ka-tomato:before {
+    content: ""
+}
+.ka-popcorn:before {
+    content: ""
+}
+.ka-90:before,
+.ka-arrow-right:before,
+.ka-arrow2-right:before,
+.ka-arrow3-right:before {
+    transform: rotate(90deg)
+}
+.ka-180:before,
+.ka-unverify:before,
+.ka-unstar:before,
+.ka-arrow-down:before,
+.ka-arrow2-down:before,
+.ka-arrow3-down:before {
+    transform: rotate(180deg)
+}
+.ka-270:before,
+.ka-arrow-left:before,
+.ka-arrow2-left:before,
+.ka-arrow3-left:before {
+    transform: rotate(270deg)
+}
+ul.tabNavigation li .ka-rss.rsssign:before {
+    font-size: 12px;
+    margin-left: 2px;
+    line-height: 5px!important
+}
